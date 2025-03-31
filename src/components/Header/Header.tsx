@@ -24,9 +24,6 @@ import { FC } from "react";
                 <Link href="#" color={"inherit"} underline="none">PAGES</Link>
                 <Link href="#" color={"inherit"} underline="none">OUR OFFER</Link>
                 <Link href="#" color={"inherit"} underline="none">PRICING</Link>
-                <Link href="#" color={"inherit"} underline="none">PRICING</Link>
-                <Link href="#" color={"inherit"} underline="none">PRICING</Link>
-                <Link href="#" color={"inherit"} underline="none">PRICING</Link>
         </Box>
                 <OrderButton>Order Now</OrderButton>
                 
