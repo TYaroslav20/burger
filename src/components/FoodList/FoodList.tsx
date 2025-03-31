@@ -7,10 +7,12 @@ import foodlist4 from '../../assets/food-list-4.jpg'
 import { FC } from "react";
 
  export const FoodList : FC =()=>{
-    
+     // Вот это вот все, тоже так не делается
+     // Ты фактически четыре раза пишешь один и тот же код
+     // А правильно создать один компонент и вызвать его четыре раза, подставит нужные переменные
+
   return(
   <>
-  
   <Box sx={{
         display: "flex",
         justifyContent: 'space-between',

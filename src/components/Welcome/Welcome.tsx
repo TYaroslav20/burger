@@ -6,6 +6,8 @@ import { FC } from "react";
   return(
     <>
         <Box sx={{
+            //   как парвило такое выносится в отдельный стилизованный компонент
+            //   что то типпа WelcomeWrapper
             backgroundImage:`url(${BgImage})`,
             boxSizing:'border-box',
             minHeight:'100vh',

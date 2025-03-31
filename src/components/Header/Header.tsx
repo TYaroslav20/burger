@@ -11,6 +11,8 @@ import { FC } from "react";
         justifyContent:"space-between"
       }}>       
         <Box sx={{
+          //   как парвило такое выносится в отдельный стилизованный компонент
+          //   что то типпа HeaderWrapper
           display: 'flex',
           typography: 'body1',
           justifyContent: 'center',
@@ -19,7 +21,7 @@ import { FC } from "react";
             ml: 2,   
             },
         }}>
-                
+                {/* Вот это всето что ниже с Link - вообще от лукавого :) */}
                 <Link href="#" color={"inherit"} underline="none">HOME</Link>
                 <Link href="#" color={"inherit"} underline="none">PAGES</Link>
                 <Link href="#" color={"inherit"} underline="none">OUR OFFER</Link>
