@@ -1,34 +1,38 @@
-import { AppBar, Box, Container, Link, Toolbar } from "@mui/material";
+import { 
+  Container,
+  Link,
+} from "@mui/material";
 import { OrderButton } from "../elements/OrderButton/OrderButton";
 import { FC } from "react";
+import {
+  SlyledAppBar,
+  StyledToolbar,
+  BoxMenu,
+  StyledLink,
+  MenuItems
+} from './Styled'
  export const Header : FC =()=>{
   return(
     <>
     <Container>
-    <AppBar position="static" >
-      <Toolbar sx={{
-        display:'flex',
-        justifyContent:"space-between"
-      }}>       
-        <Box sx={{
-          display: 'flex',
-          typography: 'body1',
-          justifyContent: 'center',
-          alignItems: 'center',
+    <SlyledAppBar position="static" >
+      <StyledToolbar>       
+        <BoxMenu sx={{
           '& > :not(style) ~ :not(style)': {
             ml: 2,   
             },
         }}>
-                
-                <Link href="#" color={"inherit"} underline="none">HOME</Link>
-                <Link href="#" color={"inherit"} underline="none">PAGES</Link>
-                <Link href="#" color={"inherit"} underline="none">OUR OFFER</Link>
-                <Link href="#" color={"inherit"} underline="none">PRICING</Link>
-        </Box>
+          {MenuItems.map((item, index)=>(
+            <Link href={item.href} key={index}
+            >
+              <StyledLink variant="body1"
+              >{item.name}</StyledLink>
+            </Link>
+          ))}
+        </BoxMenu>
                 <OrderButton>Order Now</OrderButton>
-                
-            </Toolbar>
-        </AppBar>
+            </StyledToolbar>
+        </SlyledAppBar>
     </Container>
     
 
