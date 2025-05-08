@@ -25,10 +25,9 @@ export const BoxMenu = styled(Box)`
   justify-content: center;  
   align-items: center;  
 `;
-export const StyledLink = styled(Typography)`  
-  color: white;  // Устанавливаем цвет текста в белый  
-  text-decoration: none; // Убираем подчеркивание  
+export const StyledLink = styled(Typography)` 
 
+  color: white;  // Устанавливаем цвет текста в белый  
   &:hover {  
     text-decoration: none; // Убираем подчеркивание при наведении  
   } 
